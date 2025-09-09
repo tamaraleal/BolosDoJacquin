@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: "Bellota", system-ui;
+}
+
+body {
+    background-color: #FFF6E8;
 }
 
 header {
@@ -45,7 +50,6 @@ header {
     border-radius: 10px;
     border: solid 1px #cccccc;
     padding-left: 2.5rem;
-    font-family: "Bellota", system-ui;
     font-size: 1rem;
 }
 
@@ -95,3 +99,88 @@ header {
     clip-path: inset(50%);
     white-space: nowrap;
 }
+
+
+/* CARDS */
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+}
+
+.card {
+    width: 350px;
+    height: 500px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+    margin-bottom: 100px;
+    box-shadow: 0 4px 4px 2px #00000025;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card p,
+.card span {
+    font-size: 18px;
+    width: 90%;
+}
+
+.whatsapp {
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    transition: transform 0.5s ease-in-out,
+        filter 0.5s ease-in-out;
+}
+
+.whatsapp img {
+    width: 80px;
+    filter: drop-shadow(0 5px 1px #00000025);
+}
+
+.whatsapp:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(0 10px 2px #00000025);
+}
+
+footer{
+    width: 100%;
+    height: 60px;
+    background-color: #FFD188;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer p{
+      font-family: "Julius Sans One", sans-serif;
+}
+
+
+
+/* footer{
+    background-color: #FFD188;
+    height: 90px;
+    height: 100%;
+    max-width: 90%;
+    width: 1440px;
+} */
+
+/* .footer p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto
+} */
+
